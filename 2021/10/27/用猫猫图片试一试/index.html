@@ -57,13 +57,15 @@
   <div class="post-content">
     <p>天哪！不会有人不喜欢可爱的猫猫吧！</p>
 <span id="more"></span>
-
 <h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><p>这是真正意义上的第一个博客！在2021年10月27日上午一个刚把文书修改稿送出去突然思绪放空的瞬间。因为写这个东西只是为了熟悉一下网站编辑的基本操作，所以就归到“杂项”一类了。接下来我会展示三个可爱的东西：</p>
 <ol>
-<li><p>$$<br>e^{\pi i} +1=0<br>$$</p>
+<li><script type="math/tex; mode=display">
+e^{\pi i} +1=0</script></li>
+<li><center><img src="/images/211027_1.jpg" width="50%" height="50%"></center>
 </li>
-<li><center><img src="/images/211027_1.jpg" width="50%" height="50%"></center></li>
-<li><center><img src="/images/211027_2.jpg" width="50%" height="50%"></center></li>
+<li><center><img src="/images/211027_2.jpg" width="50%" height="50%"></center>
+
+</li>
 </ol>
 <p>这就是全部的内容啦！耶！</p>
 <p>希望你开心！</p>
@@ -84,5 +86,20 @@
   </span>
 </footer>
     </div>
-  </body>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+</body>
 </html>
