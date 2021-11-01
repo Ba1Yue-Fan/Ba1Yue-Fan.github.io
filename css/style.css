@@ -35,10 +35,10 @@ a {
   color: #808080;
 }
 .home .info .sns {
-  margin: 1em auto;
+  margin: 5em auto;
 }
 .home .info .sns a {
-  width: 80px;
+  width: 100px;
   color: #999;
   display: inline-block;
 }
