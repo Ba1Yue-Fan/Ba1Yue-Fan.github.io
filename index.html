@@ -5,31 +5,65 @@
   <title>Ze Fan</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; max-width: 720px; margin: 2rem auto; padding: 0 1rem; }
-    header { display: flex; gap: 1rem; align-items: center; }
-    img.photo { width: 140px; height: 140px; object-fit: cover; border-radius: 4px; }
-    h1 { margin: 0.2rem 0; }
-    nav a { margin-right: 1rem; }
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 720px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    /* 头像 + 文字整体横排 */
+    header {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;   /* 顶部对齐 */
+    }
+
+    img.photo {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+
+    h1 {
+      margin: 0.2rem 0;
+    }
+
+    nav a {
+      margin-right: 1rem;
+    }
+
+    /* Ze Fan + 汉字同一行 */
+    .name-row {
+      display: flex;
+      align-items: flex-start;
+    }
 
     .hanzi-img {
-  width: 100px;              /* 大小你可以调 */
-  height: auto;
-  margin-right: 38px;       /* 与 Ze Fan 距离约 1 cm */
-  display: block;
-  border: none;
-}
+      width: 100px;        /* 汉字图大小，可自行调整 */
+      height: auto;
+      margin-left: 38px;   /* 和 “Ze Fan” 的水平距离 ≈ 1 cm */
+      border: none;
+      display: block;
+    }
   </style>
 </head>
 <body>
   <header>
     <img class="photo" src="img/photo.jpg" alt="Ze Fan">
+
     <div>
-      <h1>Ze Fan</h1>
+      <!-- 新增：名字和汉字在同一行 -->
+      <div class="name-row">
+        <h1>Ze Fan</h1>
+        <img src="img/name.png" class="hanzi-img" alt="">
+      </div>
+
       <p>Department of Mathematics and Computer Science, Wesleyan University</p>
       <p>Research interests: algebraic number theory, algebraic geometry, algebraic topology.</p>
     </div>
-    
-    <img src="img/name.png" class="hanzi-img" alt="">
   </header>
 
   <hr>
@@ -38,9 +72,8 @@
     Welcome to my homepage. I am an undergraduate student at Wesleyan University, majoring in mathematics. I expect to graduate in May 2026.
   </p>
 
- <p>For a list of my papers and preprints, please see: <a href="papers.html">Papers & Preprints</a>. </p>
+  <p>For a list of my papers and preprints, please see: <a href="papers.html">Papers & Preprints</a>. </p>
   
   <p>You can view my CV <a href="pdf/new_cv.pdf">here</a>.</p>
 </body>
 </html>
-
