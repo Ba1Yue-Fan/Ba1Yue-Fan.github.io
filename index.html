@@ -10,7 +10,14 @@
     img.photo { width: 140px; height: 140px; object-fit: cover; border-radius: 4px; }
     h1 { margin: 0.2rem 0; }
     nav a { margin-right: 1rem; }
-    
+
+    .hanzi-pdf {
+      width: 65px;           
+      height: 40px;
+      margin-left: auto;     
+      border: none;
+      align-self: flex-start; 
+    }
   </style>
 </head>
 <body>
@@ -21,6 +28,12 @@
       <p>Department of Mathematics and Computer Science, Wesleyan University</p>
       <p>Research interests: algebraic number theory, algebraic geometry, algebraic topology.</p>
     </div>
+    
+    <object
+      data="pdf/name.pdf"
+      type="application/pdf"
+      class="hanzi-pdf">
+    </object>
   </header>
 
   <hr>
